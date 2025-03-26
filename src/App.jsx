@@ -12,6 +12,7 @@ import Student from "./screens/Student";
 import Admin from "./screens/Admin";
 import Sattendance from "./screens/Sattendance";
 import Faculty from "./screens/Faculty";
+import Facstatus from "./screens/Facstatus";
 import Sgrades from "./screens/Sgrades";
 import { AnimatePresence } from 'motion/react'
 
@@ -34,6 +35,8 @@ const App = () => {
             <Route path="/sgrades" element={<Sgrades/>}/>
             <Route path="/sattendance" element ={<Sattendance/>}/>
             <Route path="/sgrades" element={<Sgrades/>}/>
+            <Route path="/stimetable" element={<Stimetable/>}/>
+            <Route path="/facstatus" element={<Facstatus/>}/>
 
           </Routes>
         </AnimatePresence>
