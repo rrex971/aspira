@@ -12,8 +12,6 @@ const FacLogin = () => {
             setError("Both fields are required!");
             return;
         }
-
-        // Redirect to Faculty.jsx after successful login
         navigate("/faculty");
     };
 
