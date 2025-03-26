@@ -14,8 +14,11 @@ import Sattendance from "./screens/Sattendance";
 import Faculty from "./screens/Faculty";
 import Facstatus from "./screens/Facstatus";
 import Sgrades from "./screens/Sgrades";
-import { AnimatePresence } from 'motion/react'
-import Stimetable from "./screens/Stimetable"
+import { AnimatePresence } from 'motion/react';
+import Stimetable from "./screens/Stimetable";
+import Admissions from './screens/Admissions';
+import Profiles from "./screens/Profiles";
+import Academhist from "./screens/Academhist";
 
 const App = () => {
   
@@ -30,16 +33,16 @@ const App = () => {
             <Route path="/admin" element={<Admin />}/>
 
             <Route path="/Faculty"element = {<Faculty/>} />
-            
-            <Route path="/sattendance" element={<Sattendance/>}/>
-            <Route path="/sgrades" element={<Sgrades/>}/>
-            <Route path ="/facstatus" element ={<Facstatus/>}></Route>
+    
           
         
             <Route path="/sattendance" element ={<Sattendance/>}/>
             <Route path="/sgrades" element={<Sgrades/>}/>
             <Route path="/stimetable" element={<Stimetable/>}/>
             <Route path="/facstatus" element={<Facstatus/>}/>
+            <Route path="/admissions" element={<Admissions/>}/>
+            <Route path="/academhist" element={<Academhist/>}/>
+            <Route path="/profiles" element={<Profiles/>}/>
 
 
           </Routes>
