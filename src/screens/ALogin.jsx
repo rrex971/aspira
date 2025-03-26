@@ -1,7 +1,7 @@
+import transition from "../../transition";
 import Login from "../components/Login";
 
-const Alogin = () => {
+const ALogin = () => {
     return <Login role="Admin" redirectPath="/admin" />;
 };
-
-export default Alogin;
+export default transition(ALogin);

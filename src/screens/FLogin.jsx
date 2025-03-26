@@ -1,7 +1,8 @@
 import Login from "../components/Login";
+import transition from "../../transition";
 
-const Flogin = () => {
+const FLogin = () => {
     return <Login role="Faculty" redirectPath="/faculty" />;
 };
 
-export default Flogin;
+export default transition(FLogin);
