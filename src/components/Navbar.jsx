@@ -1,13 +1,10 @@
 const Navbar = () => {
     return (
-        <div className="flex justify-between items-center p-4 bg-gray-800 text-white">
-            {/* Left: ASPIRA */}
-            <p className="text-xl font-bold font-main">ASPIRA</p>
-
-            {/* Right: Login */}
-            <p className="text-sm cursor-pointer hover:underline font-main">Login</p>
-        </div>
-    );
-};
+    <div className="w-full h-32 flex justify-between items-center px-8 py-4 font-bold bg-orange-peel-400 text-4xl text-orange-100">
+        <div>Aspira</div>
+        <div></div>
+    </div>
+    )
+}
 
 export default Navbar;
