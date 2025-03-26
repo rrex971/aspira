@@ -15,7 +15,7 @@ import Faculty from "./screens/Faculty";
 import Facstatus from "./screens/Facstatus";
 import Sgrades from "./screens/Sgrades";
 import { AnimatePresence } from 'motion/react'
-import Facstatus from "./screens/Facstatus";
+import Stimetable from "./screens/Stimetable"
 
 const App = () => {
   
@@ -33,18 +33,14 @@ const App = () => {
             
             <Route path="/sattendance" element={<Sattendance/>}/>
             <Route path="/sgrades" element={<Sgrades/>}/>
-<<<<<<< HEAD
             <Route path ="/facstatus" element ={<Facstatus/>}></Route>
           
-            
-
-            
-=======
+        
             <Route path="/sattendance" element ={<Sattendance/>}/>
             <Route path="/sgrades" element={<Sgrades/>}/>
             <Route path="/stimetable" element={<Stimetable/>}/>
             <Route path="/facstatus" element={<Facstatus/>}/>
->>>>>>> 419a0364fe9694c7169b786346c9db841df9581a
+
 
           </Routes>
         </AnimatePresence>

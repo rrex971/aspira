@@ -15,4 +15,4 @@ const Stimetable = () => {
     );
 };
 
-export default Stitle;
+export default Stimetable;
