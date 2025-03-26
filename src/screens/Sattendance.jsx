@@ -1,4 +1,4 @@
-const Attendance = () => {
+const Sattendance = () => {
     return (
         <div>
             <h1 className="font-bold text-3xl md:text-6xl flex justify-center mt-8 md:mt-16">
@@ -8,4 +8,4 @@ const Attendance = () => {
     );
 };
 
-export default Attendance;
+export default Sattendance;
