@@ -4,26 +4,26 @@ const Student = () => {
     return (
         <div className="flex h-screen bg-gray-100">
             {/* Sidebar */}
-            <aside className="w-64 bg-orange-300 text-white flex flex-col p-6 shadow-md">
+            <aside className="w-64 bg-orange-peel-300 text-white flex flex-col p-6 shadow-md">
                 <h2 className="text-xl font-semibold mb-6 text-center">Student Portal</h2>
                 <nav className="space-y-3">
                     <Link to="/Sattendance">
-                        <button className="w-full text-left px-4 py-3 rounded-md bg-orange-400 hover:bg-orange-400 transition">
+                        <button className="w-full text-left px-4 py-3 bg-orange-peel-400 hover:bg-orange-400 transition-transform duration-500 ease-out hover:scale-105">
                             Attendance
                         </button>
                     </Link>
                     <Link to="/Sgrades">
-                        <button className="w-full text-left px-4 py-3 rounded-md bg-orange-400 hover:bg-orange-400 transition">
+                        <button className="w-full text-left px-4 py-3 bg-orange-peel-400 hover:bg-orange-400 transition-transform duration-500 ease-out hover:scale-105">
                              Grades
                         </button>
                     </Link>
                     <Link to="/Stimetable">
-                        <button className="w-full text-left px-4 py-3 rounded-md bg-orange-400 hover:bg-orange-400 transition">
+                        <button className="w-full text-left px-4 py-3 bg-orange-peel-400 hover:bg-orange-400 transition-transform duration-500 ease-out hover:scale-105">
                              Timetable
-                      </button>
+                        </button>
                     </Link>
                     <Link to="/Scourses">
-                        <button className="w-full text-left px-4 py-3 rounded-md bg-orange-400 hover:bg-orange-400 transition">
+                        <button className="w-full text-left px-4 py-3 bg-orange-peel-400 hover:bg-orange-400 transition-transform duration-500 ease-out hover:scale-105">
                              Courses
                         </button>
                     </Link>
