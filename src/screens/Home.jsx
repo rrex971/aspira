@@ -13,7 +13,7 @@ const Home = () => {
             <LoginButton icon={<PiStudentFill size={96} />} category="Student"/>
 
             {/* ✅ Wrapped Faculty LoginButton with Link */}
-            <Link to="/faculty">
+            <Link to="/FacLogin">
                 <LoginButton icon={<PiChalkboardTeacherFill size={96}/>} category="Faculty"/>
             </Link>
 
