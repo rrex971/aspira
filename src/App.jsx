@@ -1,11 +1,28 @@
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router";
+
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./screens/Home";
+import { AnimatePresence } from 'motion/react'
+
 
 const App = () => {
 
   return (
-    <div className='font-bold text-3xl'>
-      bhen is gay
-    </div>
+    <>
+      <Navbar /> 
+      <AnimatePresence>
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </AnimatePresence>
+      <Footer />
+    </>
   )
-}
+};
 
-export default App
+export default App;

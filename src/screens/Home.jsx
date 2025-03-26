@@ -1,9 +1,14 @@
 const Home = () => {
     return (
-        <div>
-            <header className="w-full h-48 font-bold text-3xl">
-                Home Page
-            </header>
+        <div className="flex justify-evenly items-center h-screen">
+            <div className="app-title font-bold text-8xl">
+                Aspira
+            </div>
+            <div className="app-subtitle font-medium text-2xl">
+                A university management app.
+            </div>
         </div>
     )
 }
+
+export default Home;
