@@ -1,0 +1,18 @@
+import { Link } from "react-router";
+
+const Student = () => {
+    return (
+        <div>
+            <nav>
+                <ul>
+                    <li><Link to="/attendance">Attendance</Link></li>
+                    <li><Link to="/grades">Grades</Link></li>
+                    <li><Link to="/timetable">Timetable</Link></li>
+                    <li><Link to="/courses">Courses</Link></li>
+                </ul>
+            </nav>
+        </div>
+    );
+}
+
+export default Student;
