@@ -7,6 +7,9 @@ import {
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Alogin from "./screens/Alogin";
+import Flogin from "./screens/Flogin";
+import Slogin from "./screens/Slogin";
 import Home from "./screens/Home";
 import Student from "./screens/Student";
 import Admin from "./screens/Admin";
@@ -15,7 +18,9 @@ import Faculty from "./screens/Faculty";
 import Facstatus from "./screens/Facstatus";
 import Sgrades from "./screens/Sgrades";
 import { AnimatePresence } from 'motion/react'
-import Stimetable from "./screens/Stimetable"
+import Stimetable from "./screens/Stimetable";
+
+
 
 const App = () => {
   
@@ -40,8 +45,9 @@ const App = () => {
             <Route path="/sgrades" element={<Sgrades/>}/>
             <Route path="/stimetable" element={<Stimetable/>}/>
             <Route path="/facstatus" element={<Facstatus/>}/>
-
-
+            <Route path="/alogin" element={<Alogin />} />
+            <Route path="/flogin" element={<Flogin />} />
+            <Route path="/slogin" element={<Slogin />} />
           </Routes>
         </AnimatePresence>
       <Footer />

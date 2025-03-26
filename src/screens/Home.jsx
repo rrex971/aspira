@@ -9,15 +9,15 @@ const Home = () => {
         <div className="font-bold text-3xl md:text-6xl flex justify-center mt-8 md:mt-16">Welcome to Aspira!</div>
         <div className="font-medium text-2xl mx-8 flex justify-center mt-4">A digital platform that provides Students, Faculty and Administrators supporting efficient and easy access and management.</div>
         <div className="flex-col mx-4 flex md:flex-row space-y-8 font-main justify-center md:justify-evenly items-center mb-64 mt-16 h-fit">
-            
-            <LoginButton icon={<PiStudentFill size={96} />} category="Student"/>
-
-            {/* ✅ Wrapped Faculty LoginButton with Link */}
-            <Link to="/faculty">
+            <Link to="/Slogin">
+                <LoginButton icon={<PiStudentFill size={96} />} category="Student"/>
+            </Link>
+            <Link to="/Flogin">
                 <LoginButton icon={<PiChalkboardTeacherFill size={96}/>} category="Faculty"/>
             </Link>
-
-            <LoginButton icon={<RiAdminFill size={96}/>} category="Admin"/>
+            <Link to="/Alogin">
+                <LoginButton icon={<RiAdminFill size={96}/>} category="Admin"/>
+            </Link>
         </div>
     </div>
     );
