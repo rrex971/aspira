@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./screens/Home";
 import Student from "./screens/Student";
+import Sattendance from "./screens/Sattendance";
 import Faculty from "./screens/Faculty";
 import { AnimatePresence } from 'motion/react'
 
@@ -22,6 +23,8 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/Faculty"element = {<Faculty/>} />
             <Route path="/student" element={<Student/>}/>
+            <Route path="/student/sattendance" element ={<Sattendance/>}/>
+            <Route path="/student/sgrades" element={<Sgrades/>}/>
           </Routes>
         </AnimatePresence>
       <Footer />
