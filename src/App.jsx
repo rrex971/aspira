@@ -15,7 +15,7 @@ const App = () => {
   return (
     <>
       <Navbar /> 
-      <AnimatePresence>
+        <AnimatePresence>
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
           </Routes>
