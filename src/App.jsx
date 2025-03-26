@@ -19,7 +19,7 @@ import Stimetable from "./screens/Stimetable";
 import Admissions from './screens/Admissions';
 import Profiles from "./screens/Profiles";
 import Academhist from "./screens/Academhist";
-
+import FacLogin from "./screens/FacLogin";
 const App = () => {
   
   return (
@@ -43,6 +43,8 @@ const App = () => {
             <Route path="/admissions" element={<Admissions/>}/>
             <Route path="/academhist" element={<Academhist/>}/>
             <Route path="/profiles" element={<Profiles/>}/>
+            <Route path="/faclogin" element={<FacLogin/>}/>
+
 
 
           </Routes>
