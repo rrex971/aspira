@@ -3,7 +3,7 @@ import { Link } from "react-router";
 const Sidebar = (props) => {
     return (
         <aside className="w-64 bg-orange-peel-300 text-white flex flex-col p-6 shadow-md">
-                        <h2 className="text-xl font-semibold mb-6 text-center">Faculty Portal</h2>
+                        <h2 className="text-xl font-semibold mb-6 text-center">{props.category} Portal</h2>
                         <nav className="space-y-3">
                             {props.items.map((item) => (
                             <Link to={item.to}>

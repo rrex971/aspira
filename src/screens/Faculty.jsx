@@ -1,20 +1,25 @@
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import transition from "../../transition";
 import Sidebar from "../components/Sidebar";
 
 const Faculty = () => {
+    const navigate = useNavigate();
+    if(!localStorage.getItem('token') || !localStorage.getItem('role') || localStorage.getItem('role')!=='faculty'){
+        navigate('/');
+    }
+
     return (
         <div className="flex h-screen bg-gray-100">
-            <Sidebar items={[
+            <Sidebar category="Faculty" items={[
                 {
-                    to: "/facultyattendance",
+                    to: "/faculty/attendance",
                     label: "Manage Attendance"
                 }, {
-                    to: "/facgrades",
+                    to: "/faculty/grades",
                     label: "Manage Grades"
                 }, {
-                    to: "/faccourses",
-                    label: "Manage Courses"
+                    to: "/faculty/assignment",
+                    label: "Upload Assignment"
                 }
             ]}/>
 
@@ -27,3 +32,4 @@ const Faculty = () => {
 };
 
 export default transition(Faculty);
+

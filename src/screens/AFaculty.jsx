@@ -2,26 +2,26 @@ import { useNavigate, Link } from "react-router";
 import transition from "../../transition";
 import { useEffect, useState } from "react";
 
-const AAdmissions = () => {
+const AFaculty = () => {
     const navigate = useNavigate();
     if(!localStorage.getItem('token') || !localStorage.getItem('role') || localStorage.getItem('role')!=='admin'){
         navigate('/');
     }
-    const [admissions, setAdmissions] = useState([]);
+    const [records, setRecords] = useState([]);
 
     useEffect(() => {
-        const fetchAdmissions = async () => {
-            const response = await fetch("http://localhost:3123/getAdmissions");
+        const fetchRecords = async () => {
+            const response = await fetch("http://localhost:3123/getFaculty");
             const data = await response.json();
-            setAdmissions(data);
+            setRecords(data);
         };
-        fetchAdmissions();
+        fetchRecords();
     }, []);
 
     return (
         <div className="min-h-screen flex flex-col items-center justify-center bg-orange-peel-50 px-4">
             <h1 className="font-main font-bold text-3xl md:text-6xl text-orange-peel-700">
-                Student Admissions 
+                Faculty Records 
             </h1>
             <div className="overflow-x-auto">
                 <table className="table-auto w-full">
@@ -35,13 +35,13 @@ const AAdmissions = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {admissions.map(admission => (
-                            <tr key={admission[0]}>
-                                <td className="border px-4 py-2">{admission[0]}</td>
-                                <td className="border px-4 py-2">{admission[1]}</td>
-                                <td className="border px-4 py-2">{admission[2]}</td>
-                                <td className="border px-4 py-2">{admission[3]}</td>
-                                <td className="border px-4 py-2">{admission[4]}</td>
+                        {records.map(record => (
+                            <tr key={record[0]}>
+                                <td className="border px-4 py-2">{record[0]}</td>
+                                <td className="border px-4 py-2">{record[1]}</td>
+                                <td className="border px-4 py-2">{record[2]}</td>
+                                <td className="border px-4 py-2">{record[3]}</td>
+                                <td className="border px-4 py-2">{record[4]}</td>
                             </tr>
                         ))}
                     </tbody>
@@ -56,4 +56,4 @@ const AAdmissions = () => {
     );
 };
 
-export default transition(AAdmissions);
+export default transition(AFaculty);
