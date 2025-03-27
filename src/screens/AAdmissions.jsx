@@ -11,7 +11,7 @@ const AAdmissions = () => {
 
     useEffect(() => {
         const fetchAdmissions = async () => {
-            const response = await fetch("http://localhost:3123/getAdmissions");
+            const response = await fetch("https://api.aspira.rrex.cc/getAdmissions");
             const data = await response.json();
             setAdmissions(data);
         };

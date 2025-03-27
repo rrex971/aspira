@@ -11,7 +11,7 @@ const AFaculty = () => {
 
     useEffect(() => {
         const fetchRecords = async () => {
-            const response = await fetch("http://localhost:3123/getFaculty");
+            const response = await fetch("https://api.aspira.rrex.cc/getFaculty");
             const data = await response.json();
             setRecords(data);
         };

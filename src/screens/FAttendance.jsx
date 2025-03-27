@@ -25,7 +25,7 @@ const FAttendance = () => {
             return;
         }
         try {
-            const response = await fetch(`http://localhost:3123/getCourseStudents?cID=${cid}`, {
+            const response = await fetch(`https://api.aspira.rrex.cc/getCourseStudents?cID=${cid}`, {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem('token')}`
@@ -55,18 +55,23 @@ const FAttendance = () => {
     const handleLogAttendance = async (event) => {
         event.preventDefault();
         try {
-            const response = await fetch('http://localhost:3123/logAttendance', {
+            const attendanceData = {
+                attendance: Object.keys(attendance).map(regNo => ({
+                  regNo: regNo,
+                  cID: cid,
+                  date: date,
+                  attended: attendance[regNo]
+                }))
+              };
+              
+              const response = await fetch('https://api.aspira.rrex.cc/logAttendance', {
                 method: 'POST',
                 headers: {
-                    'Authorization': `Bearer ${localStorage.getItem('token')}`,
-                    'Content-Type': 'application/json'
+                  'Authorization': `Bearer ${localStorage.getItem('token')}`,
+                  'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({
-                    cid,
-                    date,
-                    attendance
-                })
-            });
+                body: JSON.stringify(attendanceData)
+              });
 
             if (response.ok) {
                 alert("Attendance logged successfully!");

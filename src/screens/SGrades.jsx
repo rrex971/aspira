@@ -23,7 +23,7 @@ const SGrades = () => {
             return;
         }
         try {
-            const response = await fetch(`http://localhost:3123/getGrades?regNo=${regno}&cID=${courseID}`, {
+            const response = await fetch(`https://api.aspira.rrex.cc/getGrades?regNo=${regno}&cID=${courseID}`, {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem('token')}`

@@ -25,7 +25,7 @@ const Register = (props) => {
     const sendData = JSON.stringify(formdata);
 
     try {
-      const response = await fetch(`http://localhost:3123/${props.category.toLowerCase()}/register`, {
+      const response = await fetch(`https://api.aspira.rrex.cc/${props.category.toLowerCase()}/register`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

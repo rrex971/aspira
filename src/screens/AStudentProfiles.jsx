@@ -17,7 +17,7 @@ const AStudentProfiles = () => {
             return;
         }
         try {
-            const response = await fetch(`http://localhost:3123/getProfile?regNo=${regno}`, {
+            const response = await fetch(`https://api.aspira.rrex.cc/getProfile?regNo=${regno}`, {
               method: 'GET',
               headers: {
                 'Authorization': `Bearer ${localStorage.getItem('token')}`

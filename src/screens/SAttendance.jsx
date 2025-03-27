@@ -22,7 +22,7 @@ const SAttendance = () => {
             return;
         }
         try {
-            const response = await fetch(`http://localhost:3123/getAttendance?regNo=${regno}&cID=${courseID}`, {
+            const response = await fetch(`https://api.aspira.rrex.cc/getAttendance?regNo=${regno}&cID=${courseID}`, {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem('token')}`

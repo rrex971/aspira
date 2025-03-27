@@ -16,7 +16,7 @@ const Login = ({ role, redirectPath }) => {
             return;
         }
         try {
-            const response = await fetch(`http://localhost:3123/${role.toLowerCase()}/login`, {
+            const response = await fetch(`https://api.aspira.rrex.cc/${role.toLowerCase()}/login`, {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',

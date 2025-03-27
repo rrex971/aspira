@@ -18,7 +18,7 @@ const AAcademicHistory = () => {
             return;
         }
         try {
-            const response = await fetch(`http://localhost:3123/getAcademicHistory?regNo=${regno}`, {
+            const response = await fetch(`https://api.aspira.rrex.cc/getAcademicHistory?regNo=${regno}`, {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem('token')}`
