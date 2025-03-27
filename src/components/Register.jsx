@@ -93,8 +93,8 @@ const Register = (props) => {
                 </button>
           </Link>
         </div>
-        {error && <p style={{ color: 'red' }} className="mt-6">errosr</p>}
-        {success && <p style={{ color: 'green' }} className="mt-6">succews</p>}
+        {error && <p style={{ color: 'red' }} className="mt-6">Error registering new user.</p>}
+        {success && <p style={{ color: 'green' }} className="mt-6">Successfully registered new user.</p>}
       </form>
     </div>
   );
