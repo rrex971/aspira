@@ -6,8 +6,8 @@ Aspira is a University Management System that encompasses features like seamless
 https://github.com/user-attachments/assets/ab2af8ac-0a8f-4d43-8cd9-87b7a99e6db0
 
 - Student flow
-
-https://github.com/user-attachments/assets/3d933a31-8a59-4700-bfc4-6769bb5a155e
+  
+https://github.com/user-attachments/assets/2a68754c-1b09-4f26-bd56-6ffaa961f379
 
 - Faculty flow
 
